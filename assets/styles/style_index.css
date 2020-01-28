@@ -1,0 +1,111 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Bungee Inline', cursive;
+    color: #fff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+.navbar{
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+/*SVG Maintenance*/
+
+.note{
+    animation: noteBob 3s infinite ease-in-out alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+#svgContainer{
+    margin-top: 1rem;
+}
+
+#faceVector{
+    transform: scale(1.1, 1.1);
+    transform-origin: bottom;
+}
+
+#Face{
+    animation: bob 2s infinite ease-in-out alternate;
+    transform-origin: bottom;
+    transform-box: fill-box ;
+}
+
+/*Custom Animations*/
+
+@keyframes bob {
+    from{
+        transform: rotateZ(-8deg);
+    }
+    to{
+        transform: rotateZ(8deg);
+    }
+}
+
+@keyframes noteBob {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*Adjusting Page content based on window size*/
+
+@media(min-width: 767px){
+    body {
+        overflow: hidden;
+    }
+}
+
+@media(min-width: 768px){
+    td{
+        font-size: 3.5rem;
+    }
+}
+
+@media(min-width: 992px) {
+    td{
+        font-size: 4.5rem;
+    }
+}
+
+@media(min-width: 1200px){
+    td{
+        font-size: 5rem;
+    }
+}
+
+@media(max-width: 992px){
+    #svgContainer{
+        margin-top: 5rem;
+    }
+}

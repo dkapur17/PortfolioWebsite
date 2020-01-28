@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="icon" href="assets/favicons/favicon_about.ico">
+    <script src="lib/js/jQuery.js" type="text/javascript"></script>
+    <script src="lib/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="lib/js/wow.js" type="text/javascript"></script>
+    <script src="assets/scripts/script_about.js" type="text/javascript"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <link rel="stylesheet" href="lib/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Bungee+Inline|Anton|Acme|Kulim+Park&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" type="text/css">
+    <link rel="stylesheet" href="assets/styles/style_about.css" type="text/css">
+</head>
+<body>
+<!--Preload screen-->
+<div id="preloadBG">
+    <div id="preloadContent" class="container d-flex justify-content-center text-white">
+        <div class="container d-flex flex-column justify-content-center animated slideInUp">
+            <div class="row justify-content-center">
+                <h1 class="d-none d-md-block display-1 text-center">THERE REALLY ISN'T THAT MUCH TO ME.</h1>
+                <h1 class="d-block d-md-none display-4 text-center">THERE REALLY ISN'T THAT MUCH TO ME.</h1>
+                <i id="continueDown" class="display-1 fas fa-arrow-circle-down"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="postLoad">
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top invisible">
+        <a class="navbar-brand mb-1 mb-lg-0" href="index.html"><i class="fas fa-hashtag"></i> Dhruv Kapur</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item my-1 my-lg-0">
+                    <a class="nav-link active" href="about.html"><i class="fas fa-address-card"></i> About</a>
+                </li>
+                <li class="nav-item my-1 my-lg-0">
+                    <a class="nav-link" href="skills.html"><i class="fas fa-terminal"></i> Skills</a>
+                </li>
+                <li class="nav-item my-1 my-lg-0">
+                    <a class="nav-link" href="contact.html"><i class="fas fa-mobile"></i> Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--The stuff on the page other than the navbar-->
+    <div id="pageContent" class="container">
+        <div class="jumbotron bg-dark text-white text-center pb-2">
+            <h1 class="display-1 d-none d-lg-block">I never know what to tell people about me. So here's my ID Card</h1>
+            <h1 class="display-3 d-block d-lg-none">I never know what to tell people about me. So here's my ID Card</h1>
+            <hr class="my-4">
+            <p>Keep Scrolling...</p>
+        </div>
+        <div class="row justify-content-center my-5 wow fadeInUp">
+            <img class="img-fluid col-12 col-lg-6" src="assets/images/profile/ID%20Card%20Vector.svg" alt="ID Card">
+        </div>
+        <div class="row my-5 text-center text-white">
+            <h1 class="display-4 wow lightSpeedIn">That's not enough? You're probably right...</h1>
+        </div>
+        <!--Row General-->
+        <div class="row justify-content-between mx-auto my-5">
+            <div class="row col-12 col-lg-5 justify-content-center text-white wow slideInLeft mx-auto my-2">
+                <div class="row text-center mb-3">
+                    <h1 class="display-4 pt-3 mx-auto mb-3">Who am I?</h1>
+                    <p class="lead">Hey! I'm Dhruv Kapur, a first year student at IIIT Hyderabad, pursuing B.Tech in
+                        Computer Science and Engineering. I'm from New Delhi, but have spent most of my life in
+                        Dar es Salaam, Tanzania. I love sports, magic, solving puzzles and coding, but most of all,
+                        I love learning new things. Also I love doing crazy stuff. Just have a look at this picture.</p>
+                </div>
+            </div>
+            <div class="row col-12 col-lg-5 wow slideInRight m-auto mb-3">
+                <img src="assets/images/profile/Top%20Pic.jpg" class="img-fluid" alt="Face">
+            </div>
+        </div>
+        <!--Row Leadership-->
+        <div class="row justify-content-between mx-auto my-5">
+            <div id="carouselLeadership" class="carousel slide col-12 col-lg-6 order-2 order-lg-1 wow slideInLeft" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselLeadership" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselLeadership" data-slide-to="1"></li>
+                    <li data-target="#carouselLeadership" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="4000">
+                        <img src="assets/images/profile/Captain1.png" class="d-block w-100" alt="Captain1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Indian School DSM Neutral Captains 2018/19</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+                        <img src="assets/images/profile/Captain2.png" class="d-block w-100" alt="Captain2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Swearing In For School Captain and Vice Captain 2017/18</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+                        <img src="assets/images/profile/Captain3.png" class="d-block w-100" alt="Captain3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Captains' Cabinet 2017/18</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselLeadership" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselLeadership" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="row col-12 col-lg-5 justify-content-center text-white text-center wow slideInRight mx-auto my-2 order-1 order-lg-2">
+                <h1 class="display-4 mx-auto pt-5">Leadership</h1>
+                <p class="lead">I have been in several leadership roles throughout my life. The most notable ones
+                were School Vice Captain 2017/18 - Indian School DSM and School Captain 2018/19 - Indian School DSM,
+                wherein I was in charge of overall discipline as well as several school events.</p>
+            </div>
+        </div>
+        <!--Row Sports-->
+        <div class="row justify-content-between mx-auto my-5">
+            <div class="row col-12 col-lg-5 justify-content-center text-white text-center wow slideInLeft mx-auto my-2">
+                <h1 class="display-4 mx-auto pt-5">Sports</h1>
+                <p class="lead">I'm an absolute sports fanatic. I have been practicing Karate since I was just six
+                    years old and am now a Certified First Dan Black Belt from the Japan Karate Association. I also
+                    quite enjoy running and often take part in different track events. I love football, cycling and
+                    swimming as well. </p>
+            </div>
+            <div id="carouselSports" class="carousel slide col-12 col-lg-6 wow slideInRight" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselSports" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselSports" data-slide-to="1"></li>
+                    <li data-target="#carouselSports" data-slide-to="2"></li>
+                    <li data-target="#carouselSports" data-slide-to="3" class="active"></li>
+                    <li data-target="#carouselSports" data-slide-to="4"></li>
+                    <li data-target="#carouselSports" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="4000">
+                        <img src="assets/images/profile/Sports1.png" class="d-block w-100" alt="Sports1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>ISD Annual Sports Meet 2017/18 800m Senior Boys Finals</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+                        <img src="assets/images/profile/Sports2.png" class="d-block w-100" alt="Sports2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>First Dan Black Belt Diploma from Japan Karate Association</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+                        <img src="assets/images/profile/Sports3.png" class="d-block w-100" alt="Sports3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>ISD Annual Sports Meet 2017/18 400m Senior Boys Finals</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+                        <img src="assets/images/profile/Sports4.png" class="d-block w-100" alt="Sports4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Al Muntazir Inter School Football Tournament 2017</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+                        <img src="assets/images/profile/Sports5.png" class="d-block w-100" alt="Sports5">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Dar Rotary Marathon 2017 21km Cycling</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+                        <img src="assets/images/profile/Sports6.png" class="d-block w-100" alt="Sports6">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>ISD Inter House Football Tournament 2018</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselSports" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselSports" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="px-5 mb-1">
+        <hr class="my-3">
+        <p class="text-white">© Dhruv Kapur 2019.</p>
+    </footer>
+</body>
+</html>

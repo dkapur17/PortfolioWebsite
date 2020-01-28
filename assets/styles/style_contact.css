@@ -1,0 +1,136 @@
+body{
+    overflow: hidden;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    /*font-family: Anton;*/
+    font-family: 'Bowlby One SC';
+}
+
+/*Hide generic scroll-bar*/
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#preloadBG {
+    background: #1b1e21;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+#preloadContent{
+    height: 100vh;
+}
+
+#continueDown{
+    cursor: pointer;
+    animation: rollingDown 0.75s infinite ease-in-out alternate;
+}
+
+#continueDown:hover{
+    cursor: pointer;
+    animation: spin 0.75s;
+}
+
+.jumbotron{
+    text-transform: uppercase;
+    margin-top: 3.5rem;
+}
+
+.navbar{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.data{
+    cursor: pointer;
+    color: white;
+    transition: 700ms linear;
+}
+
+svg path{
+    fill: white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#instagram:hover{
+    color: #C13584;
+    transition: 300ms linear;
+}
+
+#fb:hover{
+    color: #3b5998;
+    transition: 300ms linear;
+}
+
+#github:hover{
+    color: #1b1e21;
+    transition: 300ms linear;
+}
+
+#stackoverflow:hover{
+    color: orange;
+    transition: 300ms linear;
+}
+
+.email a{
+    cursor: pointer;
+    color: white;
+    transition: all 0.7s ease;
+}
+
+.email a:hover{
+    color: #1b1e21;
+    transition: all 0.3s ease;
+}
+
+svg{
+    cursor: pointer;
+}
+
+footer hr{
+    border-top: 2px solid white;
+}
+footer{
+    font-family: Roboto;
+    opacity: 0.5;
+}
+
+@keyframes rollingDown {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+@keyframes spin{
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
